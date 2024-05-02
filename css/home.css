@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+  }
+
+    a {
+    text-decoration: none;
+    }
+
+    ul {
+    list-style-type: none;
+    }
+  
+  body header {
+    background: #83c0bd;
+    color: rgb(59, 57, 57);
+    font-weight: bold;
+    padding: 15px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    background: transparent;
+    transition: all .35s ease;
+  }
+  
+  header h1 {
+      font-style: italic;
+      color: #111;
+  }
+
+
+  .logo {
+    font-weight: 500;
+    font-size: 1rem;
+    
+  }
+  
+  .cabecalho-link {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .cabecalho-link ul {
+    display: flex;
+  }
+  
+  .cabecalho-link ul li {
+    padding: 20px;
+  }
+  
+  .cabecalho-link a {
+    color: #111;
+    font-weight: 800;
+    transition: 0.3s;
+  }
+  
+  
+  .icon span {
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+ 
+.apresentacao {
+    background-image: url(../img/doutor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7rem 0 0 4.5rem; 
+    line-height: 4rem;
+    margin-top: 170px;
+}
+
+.apresentacao h1{
+    color: #276960;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 50px; text-shadow: 2px 2px #eef7f6;
+}
+
+.apresentacao h2{
+    color: white;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 28px; text-shadow: 1.5px 1.5px black;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    border-radius: 20px;
+    padding: 70px;
+    margin: 20px;
+    margin-top: 100px;
+    position: absolute;
+    top: 85%;         
+    left: 6%; 
+    background-image: url(../img/estetoscopio.jpg);
+    background-size: contain;
+    color:white;font-family: "Roboto", "Helvetica", "Arial", sans-serif;font-size: 18px; text-shadow: 1px 1px black;  
+}
+
+
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; 
+    border-radius: 20px;
+    padding: 70px;
+    margin: 20px;
+    margin-top: 100px;
+    position: absolute;
+    top: 85%;         
+    left: 21%; 
+    background-image: url(../img/psicologia.jpg);
+    background-size: contain;
+    color:white;font-family: "Roboto", "Helvetica", "Arial", sans-serif;font-size: 18px; text-shadow: 1px 1px black;
+  }
+
+  .box3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    border-radius: 20px;
+    padding: 70px;
+    margin: 20px;
+    margin-top: 100px;
+    position: absolute;
+    top: 85%;         
+    left: 36%;
+    background-image: url(../img/doutores.jpg);
+    background-size: contain;
+    color:white;font-family: "Roboto", "Helvetica", "Arial", sans-serif;font-size: 18px; text-shadow: 1px 1px black;
+  }
+
+  .box4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    border-radius: 20px;
+    padding: 70px;
+    margin: 20px;
+    margin-top: 100px;
+    position: absolute;
+    top: 85%;         
+    left: 51%;
+    background-image: url(../img/medicine.jpg);
+    background-size: contain;
+    color:white;font-family: "Roboto", "Helvetica", "Arial", sans-serif;font-size: 18px; text-shadow: 1px 1px black;
+  }
+
+  .box5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    border-radius: 20px;
+    padding: 70px;
+    margin: 20px;
+    margin-top: 100px;
+    position: absolute;
+    top: 85%;         
+    left: 66%; 
+    background-image: url(../img/seringa1.jpg);
+    background-size: contain;
+    color:white;font-family: "Roboto", "Helvetica", "Arial", sans-serif;font-size: 18px; text-shadow: 1px 1px black;
+  }
+
+  .box6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    border-radius: 20px;
+    padding: 70px;
+    margin: 20px;
+    margin-top: 100px;
+    position: absolute;
+    top: 85%;         
+    left: 81%; 
+    background-image: url(../img/oftalmologista.jpg);
+    background-size: contain;
+    color:white;font-family: "Roboto", "Helvetica", "Arial", sans-serif;font-size: 18px; text-shadow: 1px 1px black;
+  }
+    
+section{
+    padding-top: 13rem;
+}
+  
+section h1{
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: darkslategrey;
+}
+
+.container-imagens{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    background-size: contain;
+} 
+
+.container-imagens img:hover{
+    transform: scale(0.9) translateY(5px);
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+.home{
+    width: 100%;
+    height: 50vh;
+    display:flex;
+    align-items:safe;
+    padding: 300px 4% 0;
+    justify-content: space-between;
+}
+
+.home-content{
+    max-width: 630px;
+    justify-content: space-between;
+}
+
+.home-content h1{
+   padding-top: 2%;
+   padding-bottom: 2%;
+   font-size: 50px;
+   line-height: 1.2;
+   color: #276960;
+}
+
+.home-content h3{
+    text-align: center;
+    margin: 9%;
+    font-size: 40px;
+    color: rgb(88, 88, 107);
+}
+
+.medicina img{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+
+.cartao{
+    width: 60px;
+    border-radius: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 100px;
+    padding-right: 1060px;
+    margin: 5px;
+    position: absolute;
+    top: 210%;         
+    left: 5%; 
+    background-color: #276960;
+ }
+
+.cartaoMedicore h1{
+   font-size: 50px;
+   line-height: 1.2;
+   color: white;
+}
+
+.cartaoMedicore h3{
+    color:rgb(7, 7, 26);
+}
+
+.cartaoMedicore img{
+    width: 210px;
+    left: 23%; 
+    position: absolute;
+    top: 5%;         
+}
+
+.beneficioCartao1{
+    width: 250px;
+    height: 110px;
+    margin: 35px;
+    border-radius:3px;
+    position: absolute;
+    top: 3%;         
+    left: 46%; 
+    background-color: rgb(198, 212, 210);
+}
+
+.beneficioCartao1 h4{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.beneficioCartao1 p{
+    margin-top: 4%;
+}
+
+.beneficioCartao2{
+    width: 250px;
+    height: 110px;
+    border-radius: 3px;
+    margin: 35px;
+    position: absolute;
+    top: 3%;         
+    left: 70%; 
+    background-color: rgb(198, 212, 210);
+}
+
+.beneficioCartao2 h4{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.beneficioCartao2 p{
+    margin-top: 4%;
+}
+
+.beneficioCartao3{
+    width: 250px;
+    height: 110px;
+    border-radius: 3px;
+    margin: 35px;
+    position: absolute;
+    top: 45%;         
+    left: 46%; 
+    background-color: rgb(198, 212, 210);
+}
+
+.beneficioCartao3 h4{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.beneficioCartao3 p{
+    margin-top: 4%;
+}
+
+.beneficioCartao4{
+    width: 250px;
+    height: 110px;
+    border-radius: 3px;
+    margin: 35px;
+    position: absolute;
+    top: 45%;         
+    left: 70%; 
+    background-color: rgb(198, 212, 210);
+}
+
+.beneficioCartao4 h4{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.beneficioCartao4 p{
+    margin-top: 4%;
+}
+
+.medicos h1{
+    margin-top: 65%;
+    text-align: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+.doutor1{
+    margin: 5%;
+    background-color: #83c0bd;
+    position: absolute;
+    max-width: 200px;
+    top: 282%;         
+}
+
+.doutor1 h3{
+    text-align: center;
+}
+
+.doutor1 h4{
+    margin-left: 5%;
+}
+.doutor1 h5{
+    margin: 5%;
+}
+.doutor1 p{
+    margin: 5%;
+}
+.imgMedico1 img{
+    width: 200px;
+    height: 200px;
+}
+.doutor2{
+    margin: 5%;
+    background-color: #83c0bd;
+    max-width: 200px;
+    position: absolute;
+    top: 282%;         
+    left: 19%; 
+}
+.doutor2 h3{
+    text-align: center;
+}
+
+.doutor2 h4{
+    margin-left: 5%;
+}
+.doutor2 h5{
+    margin: 5%;
+}
+.doutor2 p{
+    margin: 5%;
+}
+.imgMedico2 img{
+    width: 200px;
+    height: 200px;
+}
+.doutor3{
+    margin: 5%;
+    background-color: #83c0bd;
+    max-width: 200px;
+    position: absolute;
+    top: 282%;         
+    left: 38%; 
+}
+.doutor3 h3{
+    text-align: center;
+}
+
+.doutor3 h4{
+    margin-left: 5%;
+}
+.doutor3 h5{
+    margin: 5%;
+}
+.doutor3 p{
+    margin: 5%;
+}
+
+.imgMedico3 img{
+    width: 200px;
+    height: 200px;
+}
+.doutor4{
+    margin: 5%;
+    background-color: #83c0bd;
+    max-width: 200px;
+    position: absolute;
+    top: 282%;         
+    left: 57%; 
+}
+.doutor4 h3{
+    text-align: center;
+}
+
+.doutor4 h4{
+    margin-left: 5%;
+}
+.doutor4 h5{
+    margin: 5%;
+}
+.doutor4 p{
+    margin: 5%;
+}
+.imgMedico4 img{
+    width: 200px;
+    height: 200px;
+}
+
+.doutor5{
+    margin: 5%;
+    background-color: #83c0bd;
+    max-width: 200px;
+    position: absolute;
+    top: 282%;         
+    left: 76%; 
+}
+.doutor5 h3{
+    text-align: center;
+}
+
+.doutor5 h4{
+    margin-left: 5%;
+}
+.doutor5 h5{
+    margin: 5%;
+}
+.doutor5 p{
+        margin: 5%;
+}
+.imgMedico5 img{
+    width: 200px;
+    height: 200px;
+}
+
+section {
+    padding-top: 1rem;
+}
+
+#contato {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-around;
+    background-color: rgb(190, 204, 206);
+    padding: 4rem;
+    margin-top: 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+  
+.meio-contato h3 {
+    color: black;
+    font-size: 23px;
+    margin-bottom: 1.0rem;
+}
+  
+.meio-contato h5 {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(78, 78, 78);
+}
+  
+.meio-contato li {
+    margin-bottom: 15px;
+}
+  
+.meio-contato li a {
+    display: block;
+    color: rgb(102, 102, 102);
+    font-weight: 600;
+    transition: all .35s ease;
+}
+  
+.ultimo-texto {
+    text-align: center;
+    background-color: #555;
+    color: #fff;
+}

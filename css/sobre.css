@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body header {
+  background: #83c0bd;
+  color: rgb(59, 57, 57);
+  font-weight: bold;
+  padding: 15px;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 3rem;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  position: fixed;
+  background: transparent;
+  transition: all .35s ease;
+}
+
+header h1 {
+    font-style: italic;
+    color: #111;
+}
+<!-- Apagar essa parte-->
+#perfil {
+  display:block;
+  margin: 250px 50px;
+  font-family: 'Lato', sans-serif;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 1rem;
+  
+}
+
+.cabecalho-link {
+  display: flex;
+  gap: 3rem;
+}
+
+.cabecalho-link ul {
+  display: flex;
+}
+
+.cabecalho-link ul li {
+  padding: 20px;
+}
+
+.cabecalho-link a {
+  color: #111;
+  font-weight: 800;
+  transition: 0.3s;
+}
+
+.icon span {
+  padding: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+section {
+  padding-top: 1rem;
+
+}
+
+#contato {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-around;
+  background-color: rgb(190, 204, 206);
+  padding: 4rem;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.meio-contato h3 {
+  color: black;
+  font-size: 23px;
+  margin-bottom: 1.0rem;
+}
+
+.meio-contato h5 {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(78, 78, 78);
+}
+
+.meio-contato li {
+  margin-bottom: 15px;
+}
+
+.meio-contato li a {
+  display: block;
+  color: rgb(102, 102, 102);
+  font-weight: 600;
+  transition: all .35s ease;
+}
+
+.ultimo-texto {
+  text-align: center;
+  background-color: #555;
+  color: #fff;
+}
+
+.sobre{
+  background-image: url(../img/injecao1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 7rem 0 0 4.5rem; 
+  line-height: 4rem;
+  margin-top: 170px;
+  padding: 12%;
+}
+
+.sobre h1{
+  position: absolute; 
+  top: 250px; 
+  right: 420px;
+  color: white;font-family: "Roboto", "Helvetica", "Arial", sans-serif; ; font-size: 50px; text-shadow: 2px 2px #eef7f6;
+}
+
+.historia img{
+  border-radius: 50%;
+  width: 400px;
+  left: 8%; 
+  margin: 50px;
+  margin-top: 50px;
+
+}
+.historia h1{
+  width: 750px;
+  margin: 480px;
+  margin-top: -31%; 
+}
+.historia h3{
+  width: 750px;
+  margin: 480px;
+  margin-top: -35%;         
+}
+
+
+.atendimento img{
+  border-radius: 50%;
+  width: 410px;
+  margin-left: 825px;
+  margin-top: -22%;
+}
+
+.atendimento h1{
+  width: 750px;
+  margin-left: 5%;
+  margin-right: 300px;
+  margin-top: -25%; 
+}
+.atendimento h3{
+  width: 750px;
+  margin-left: 5%;
+  margin-right: 300px;
+  margin-top: 2%;      
+}
+
+.especialidades img{
+  border-radius: 50%;
+  width: 400px;
+  left: 8%; 
+  margin: 50px;
+  margin-top: 1%;
+}
+
+.especialidades h1{
+  width: 750px;
+  margin: 480px;
+  margin-top: -28%; 
+}
+.especialidades h3{
+  width: 750px;
+  margin: 480px;
+  margin-top: -35%; 
+}
+.beneficios img{
+  border-radius: 50%;
+  width: 410px;
+  margin-left: 825px;
+  margin-top: -22%;
+}
+
+.beneficios h1{
+  width: 750px;
+  margin-left: 5%;
+  margin-right: 300px;
+  margin-top: -20%; 
+}
+.beneficios h3{
+  width: 750px;
+  margin-left: 5%;
+  margin-right: 300px;
+  margin-top: 2%;      
+}

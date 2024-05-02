@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/consulta.css">
+    <title>Consulta</title>
+</head>
+<body>
+
+  <div class="header container">
+    <div class="nav">
+      <div class="left">
+        <a href="">
+          <p><</p> 
+        </a>
+      </div>
+      <div class="right">
+        <a href="">
+          <p>X</p>
+        </a>
+      </div>
+    </div>
+    <div class="progress-bar container">
+      <div class="progress"></div>
+    </div>
+  </div>
+  
+
+  <div class="container">
+
+    <div id="step1" class="step active">
+      <div class="flexive">
+        <div class="title">
+          <h2>Em qual região deseja realizar a consulta?</h2>
+        </div>
+        <div class="step-content">
+          <select id="consultaEstado" onchange="updatePlaceholder()">
+              <option value="" disabled selected>Selecione a Região</option>
+              <option value="São Paulo - SP">São Paulo - SP</option>
+              <option value="Rio de Janeiro - RJ">Rio de Janeiro - RJ</option>
+              <option value="Bahia - BA">Bahia - BA</option>
+              <option value="Amazonas - AM">Amazonas - AM</option>
+              <option value="Minas Gerais - MG">Minas Gerais - MG</option>
+          </select>
+        </div>
+        <div class="next-button">
+          <button onclick="nextStep()" class="next-button-content">Próximo</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="step2" class="step">
+      <div class="flexive">
+        <div class="title">
+          <h2>Qual o tipo de procedimento você precisa?</h2>
+        </div>
+        <div class="step-content">
+          <select id="consultaTipo">
+          <option value="" disabled selected>Selecione um Procedimento</option>
+          <option value="Consulta">Consulta Médica</option>
+          <option value="Consulta Online">Telemedicina</option>
+          <option value="Retorno">Retorno</option>
+          </select>
+        </div>
+        <div class="next-button">
+          <button onclick="nextStep()" class="next-button-content">Próximo</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="step3" class="step">
+        <div class="title"> 
+          <h2>Em qual a Especialidade você deseja agendar?</h2>
+        </div>
+        <div class="step-content">
+          <select id="consultaEspecialidade">
+            <option value="" disabled selected>Selecione uma Especialidade</option>
+            <option value="Clinico Geral">Clinico Geral</option>
+            <option value="Cardiologista">Cardiologista</option>
+            <option value="Dermatologista">Dermatologista</option>
+            <option value="Gastrologista">Gastrologista</option>
+          </select>
+        </div>
+        <div class="next-button">
+          <button onclick="nextStep()" class="next-button-content">Próximo</button>
+        </div>
+    </div>
+
+    <div id="step4" class="step">
+        <div class="title">
+          <h2>Em qual a data você deseja marcar?</h2>
+        </div>
+        <div class="step-content-dia">
+            <div class="data-box">
+              <button class="dia-content">
+                20/11
+                <span>Hoje</span>
+              </button>
+              <button class="dia-content">
+                21/11
+                <span>Amanhã</span>
+              </button>
+              <div class="dia-content">
+                <input type="date" id="consultaData">
+
+              </div>
+            </div>
+         
+        </div>
+        <div class="next-button">
+          <button onclick="nextStep()" class="next-button-content">Próximo</button>
+        </div>
+    </div>
+
+    <div id="step5" class="step">
+      <div class="flexivel">
+        <div class="title">
+          <h2>Qual profissional e horário você deseja agendar?</h2>
+          <p>Resultados para a data seleconada</p>
+        </div>
+  
+        <div class="step-content">
+
+          <div class="profissional">
+            <div class="profissional-content">
+              <div class="imagens-medicos">
+                <img src="../img/doutor...jpg" alt="" class="imagem">
+              </div>
+              <div class="info-medico">
+                <h3>Dr. Angelo Nakamura</h3>
+                <p>Cardiologia</p>
+                <p>
+                  CRM-SP <strong>154782</strong>
+                  •
+                  RQE <strong>57148</strong>
+                </p>
+                <p>Orientador médico</p>
+                <p><strong>Dr. Piter Santos De Arruda Junior</strong></p>
+              </div>
+            </div>
+            <div class="hora-medico" id="consultaHora">
+              <button class="hora-content" value="8:52">
+                8:52
+              </button>
+              <button class="hora-content" value="11:20">
+                11:20
+              </button>
+              <button class="hora-content" value="15:50">
+                15:50
+              </button>
+              <button class="hora-content" value="20:00">
+                20:00
+              </button>
+            </div>
+          </div>
+
+          <div class="profissional">
+            <div class="profissional-content">
+              <div class="imagens-medicos">
+                <img src="../img/medica.jpg" alt="" class="imagem">
+              </div>
+              <div class="info-medico">
+                <h3>Dra. Rosalia Camargo</h3>
+                <p>Oftalmologia</p>
+                <p>
+                  CRM-SP <strong>426913</strong>
+                  •
+                  RQE <strong>82471</strong>
+                </p>
+                <p>Orientador médico</p>
+                <p><strong>Dr. Piter Santos De Arruda Junior</strong></p>
+              </div>
+            </div>
+            <div class="hora-medico" id="consultaHora">
+              <button class="hora-content" value="8:00">
+                8:00
+              </button>
+              <button class="hora-content" value="11:07">
+                11:07
+              </button>
+              <button class="hora-content" value="14:58">
+                14:58
+              </button>
+              <button class="hora-content" value="18:46">
+                18:46
+              </button>
+            </div>
+          </div>
+            
+          <div class="profissional">
+            <div class="profissional-content">
+              <div class="imagens-medicos">
+                <img src="../img/doctor1edit.jpg" alt="" class="imagem">
+              </div>
+              <div class="info-medico">
+                <h3>Dr. Mauricio Santanna</h3>
+                <p>Odontologia</p>
+                <p>
+                  CRM-SP <strong>179835</strong>
+                  •
+                  RQE <strong>27620</strong>
+                </p>
+                <p>Orientador médico</p>
+                <p><strong>Dr. Piter Santos De Arruda Junior</strong></p>
+              </div>
+            </div>
+            <div class="hora-medico">
+              <button class="hora-content">
+                14:17
+              </button>
+              <button class="hora-content">
+                17:20
+              </button>
+              <button class="hora-content">
+                18:50
+              </button>
+              <button class="hora-content">
+                19:00
+              </button>
+            </div>
+          </div>
+            
+          <div class="profissional">
+            <div class="profissional-content">
+              <div class="imagens-medicos">
+                <img src="../img/doutora2edit.jpg" alt="" class="imagem">
+              </div>
+              <div class="info-medico">
+                <h3>Dra. Susana Antonelli
+                </h3>
+                <p>Pediatria</p>
+                <p>
+                  CRM-SP <strong>204581</strong>
+                  •
+                  RQE <strong>24689</strong>
+                </p>
+                <p>Orientador médico</p>
+                <p><strong>Dr. Piter Santos De Arruda Junior</strong></p>
+              </div>
+            </div>
+            <div class="hora-medico" >
+              <button class="hora-content">
+                7:29
+              </button>
+              <button class="hora-content">
+                7:48
+              </button>
+              <button class="hora-content">
+                8:51
+              </button>
+              <button class="hora-content">
+                9:30
+              </button>
+            </div>
+          </div>
+            
+          <div class="profissional">
+            <div class="profissional-content">
+              <div class="imagens-medicos">
+                <img src="../img/dra1.jpg" alt="" class="imagem">
+              </div>
+              <div class="info-medico">
+                <h3>Dra. Beatriz de Castro</h3>
+                <p>Geriatria</p>
+                <p>
+                  CRM-SP <strong>124893</strong>
+                  •
+                  RQE <strong>47524</strong>
+                </p>
+                <p>Orientador médico</p>
+                <p><strong>Dr. Piter Santos De Arruda Junior</strong></p>
+              </div>
+            </div>
+            <div class="hora-medico">
+              <button class="hora-content">
+                10:50
+              </button>
+              <button class="hora-content">
+                11:20
+              </button>
+              <button class="hora-content">
+                11:50
+              </button>
+              <button class="hora-content">
+                12:10
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="next-button">
+          <button onclick="nextStep(), confirmConsulta()" class="next-button-content">Próximo</button>
+        </div>
+      </div>
+    </div>
+    
+    <div id="step6" class="step">
+        <div class="title">
+          <h2>Confirme sua Consulta</h2>
+        </div>
+        <div class="step-content">
+          <p>Estado: <span id="confirmEstado"></span></p>
+          <p>Tipo: <span id="confirmTipo"></span></p>
+          <p>Especialidade: <span id="confirmEspecialidade"></span></p>
+          <p>Médico: Dr. Angelo Nakamura</p>
+          <p>Hora: <span> 8:52</span></p>
+          <p>Data: <span id="confirmData"></span></p>
+        </div>
+
+        <div class="next-button">
+          <!-- <button onclick="submitForm()" class="next-button-content">Pagamento</button> -->
+          <button class="next-button-content"> <a href="pagamento.html" style="text-decoration: none; color: white">Pagamento</a></button>
+        </div>
+    </div>
+  </div>
+
+</body>
+<script src="../javascript/consulta.js"></script>
+</body>
+</html>

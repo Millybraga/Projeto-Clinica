@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+
+  fieldset{
+    border: 0;
+    
+  }
+ 
+  body header {
+    background: #83c0bd;
+    color: rgb(59, 57, 57);
+    font-weight: bold;
+    padding: 15px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    background: transparent;
+    transition: all .35s ease;
+  }
+  
+  
+  #form {
+    margin: 200px 50px;
+    font-family: 'Lato', sans-serif;
+    text-align:center;
+    align-items: center;
+    flex-direction: row; 
+  }
+  
+  em {
+    color: gray;
+    font-size: 17px;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+ 
+  input {
+    border-radius: 15px;
+    border: none;
+    width: 300px;
+    height: 40px;
+    background-color: hsl(180, 44%, 90%);
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  
+  .botao input {
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #276960 ;
+    font-weight: bold;
+    color: white;
+    width: 150px;
+    height: 40px;
+  }
+  
+  .logo {
+    font-weight: 500;
+    font-size: 1rem;
+    
+  }
+  
+  .cabecalho-link {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .cabecalho-link ul {
+    display: flex;
+  }
+  
+  .cabecalho-link ul li {
+    padding: 20px;
+  }
+  
+  .cabecalho-link a {
+    color: #111;
+    font-weight: 800;
+    transition: 0.3s;
+  }
+  
+  
+  .icon span {
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  
+  section {
+    padding-top: 1rem;
+  
+  }
+  
+  #contato {
+    display: flexbox;
+    gap: 2rem;
+    justify-content: space-around;
+    background-color: rgb(190, 204, 206);
+    padding: 2rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  }
+  
+  .meio-contato h3 {
+    color: black;
+    font-size: 23px;
+    margin-bottom: 1.0rem;
+  }
+  
+  .meio-contato h5 {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(78, 78, 78);
+  }
+  
+  .meio-contato li {
+    margin-bottom: 15px;
+  }
+  
+  .meio-contato li a {
+    display: block;
+    color: rgb(102, 102, 102);
+    font-weight: 600;
+    transition: all .35s ease;
+  }
+  
+  .ultimo-texto {
+    text-align: center;
+    background-color: #555;
+    color: #ffffff;
+  }
+  p {
+    color: white;
+  }
