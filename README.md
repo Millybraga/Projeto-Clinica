@@ -23,7 +23,7 @@ Este é um projeto para desenvolvimento de habilidades front-end, realizado no p
 
 [Perfil Github: Michele Alves](https://github.com/michelemads)
 
-[Perfil Linkedin: Emilly Braga](www.linkedin.com/in/emilly-braga-599691205)
+[Perfil Linkedin: Emilly Braga](https://www.linkedin.com/in/emilly-braga-599691205/)
 
 
 
